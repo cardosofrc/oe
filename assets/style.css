@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(assets/img/fundo.jpg) no-repeat fixed;
+    background: url(fundo.jpg) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
