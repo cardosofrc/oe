@@ -57,20 +57,20 @@ header a i{
     background: whitesmoke;
 }
 
-main .menu{
+.main-index .menu{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .menu li{
+.main-index .menu li{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-main .menu a{
+.main-index .menu a{
     padding: 10px 50px;
     border: 1px solid tomato;
     border-radius: 20px;
@@ -80,7 +80,7 @@ main .menu a{
     font-size: 14px;
 }
 
-main .menu a:hover{
+.main-index .menu a:hover{
     color: tomato;
     background: white;
 }
