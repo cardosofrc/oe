@@ -44,41 +44,31 @@ header a i{
     font-size: 20px;
 }
 
-.main-index{
+.main-details{
     margin: 20px 0;
     width: 70%;
     border: 1px solid salmon;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    align-items: center;
+    text-align: justify;
+    flex-direction: column;
     justify-content: center;
     background: whitesmoke;
+    padding: 20px;
 }
 
-.main-index .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.presidente{
+    margin-bottom: 5px;
 }
 
-.main-index .menu li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.assembleia{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.main-index .menu a{
-    padding: 10px 50px;
-    border: 1px solid tomato;
-    border-radius: 20px;
-    background: tomato;
-    color: white;
-    transition: all 0.3 ease-in;
-    font-size: 14px;
-}
-
-.main-index .menu a:hover{
+.main-details h3{
+    text-align: center;
+    margin-bottom: 10px;
     color: tomato;
-    background: white;
+    font-weight: 900;
 }
