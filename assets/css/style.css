@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, tomato, white);
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: salmon;
+}
+
+header img{
+    width: auto;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+header a i{
+    color: white;
+    font-size: 20px;
+}
+
+.main-index{
+    margin: 20px 0;
+    width: 70%;
+    border: 1px solid salmon;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+}
+
+.main-index .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-index .menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-index .menu a{
+    padding: 10px 50px;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    background: tomato;
+    color: white;
+    transition: all 0.3 ease-in;
+    font-size: 14px;
+}
+
+.main-index .menu a:hover{
+    color: tomato;
+    background: white;
+}
