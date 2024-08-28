@@ -45,8 +45,8 @@ header a i{
 }
 
 .main-details{
-    margin: 20px 0;
-    width: 70%;
+    margin: 10px 10px;
+    width: 95%;
     border: 1px solid salmon;
     height: 100%;
     display: flex;
@@ -54,7 +54,7 @@ header a i{
     flex-direction: column;
     justify-content: center;
     background: whitesmoke;
-    padding: 20px;
+    padding: 10px;
 }
 
 .presidente{
