@@ -6,13 +6,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root{
+    --color-header: #1b4969;
+    --color-body-1: #044bd9;
+    --color-body-2: #f0f2f8;
+}
+
 body{
     background: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, tomato, white);
+    background: linear-gradient(-45deg, var(--color-body-1), var(--color-body-2));
 }
 
 header{
@@ -21,7 +27,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: salmon;
+    background: var(--color-header);
 }
 
 header img{
@@ -46,8 +52,8 @@ header a i{
 
 .main-index{
     margin: 20px 0;
-    width: 70%;
-    border: 1px solid salmon;
+    width: 90%;
+    border: 1px solid ;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -70,15 +76,19 @@ header a i{
 
 .main-index .menu a{
     padding: 10px 50px;
-    border: 1px solid tomato;
+    border: 1px solid var(--color-body-1);
     border-radius: 20px;
-    background: tomato;
+    background: var(--color-body-1);
     color: white;
     transition: all 0.3 ease-in;
     font-size: 14px;
 }
 
 .main-index .menu a:hover{
-    color: tomato;
+    color: var(--color-header);
     background: white;
+}
+
+.rubrica{
+    color: red;
 }
