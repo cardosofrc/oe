@@ -61,34 +61,53 @@ header a i{
     background: whitesmoke;
 }
 
-.main-index .menu{
+.card{
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 2px 3px 10px #ccc;
+    border-radius: 12px;
+    transition: all 300ms ease-in;
+    background: var(--color-white);
 }
 
-.main-index .menu li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.card:hover{
+    background: var(--color-header);
 }
 
-.main-index .menu a{
-    padding: 10px 50px;
-    border: 1px solid var(--color-body-1);
-    border-radius: 20px;
-    background: var(--color-body-1);
-    color: white;
-    transition: all 0.3 ease-in;
-    font-size: 14px;
-}
-
-.main-index .menu a:hover{
+.card a{
     color: var(--color-header);
-    background: white;
 }
 
-.rubrica{
-    color: red;
+.card a:hover{
+    color: var(--color-body-2);
+}
+
+.card-body{
+    padding: 55px 0;
+}
+
+.card-body h5{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card-body i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .main-index{
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main-index{
+        flex-direction: column;
+    }
 }

@@ -1,6 +1,7 @@
 :root{
     --color-border: #038c3e;
     --color-title: #044bd9;
+    --color-bg: #f2b705;
 }
 
 header img{
@@ -35,6 +36,40 @@ header a i{
     padding: 10px;
 }
 
+.main-index .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-index .menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-index .menu a{
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--color-body-1);
+    border-radius: 20px;
+    background: var(--color-body-1);
+    color: white;
+    transition: all 0.3 ease-in;
+    font-size: 14px;
+}
+
+.main-index .menu a:hover{
+    color: var(--color-header);
+    background: white;
+}
+
+.rubrica{
+    color: red;
+}
+
 .presidente{
     margin-bottom: 5px;
 }
@@ -49,4 +84,15 @@ header a i{
     margin-bottom: 10px;
     color: var(--color-title);
     font-weight: 900;
+}
+
+.subtitle{
+    text-align: center;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--color-title);
+    font-weight: 500;
+    font-size: 18px;
+    background: radial-gradient(var(--color-bg), var(--color-body-2) 75%);
 }
