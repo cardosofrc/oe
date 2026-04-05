@@ -96,3 +96,8 @@ header a i{
     font-size: 18px;
     background: radial-gradient(var(--color-bg), var(--color-body-2) 75%);
 }
+
+.main-details img{
+    width: 100%;
+    height: auto;
+}
