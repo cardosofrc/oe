@@ -1,0 +1,19 @@
+.menu-cantos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-cantos li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 2px 3px 10px #ccc;
+    border-radius: 12px;
+    transition: all 100ms ease-in;
+    background: var(--color-white);
+}
