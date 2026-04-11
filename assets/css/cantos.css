@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 120px;
     height: 120px;
     margin: 0 auto;
@@ -23,6 +22,10 @@
 }
 
 .menu-cantos li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 18px;
     font-weight: bold;
     color: red;
