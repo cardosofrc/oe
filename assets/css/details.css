@@ -6,8 +6,6 @@
     
 }
 
-
-
 header img{
     width: auto;
     height: 100%;
@@ -108,4 +106,5 @@ header a i{
 
 .player{
     aspect-ratio: 16 / 9;
+    width: 100%;
 }
