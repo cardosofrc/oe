@@ -17,13 +17,65 @@
         <a href="index.html"><i class='bx bx-home'></i></a>
     </header>
 
-    <main class="main-index">
+    <main class="main-details">
         <nav class="menu">
-            
-            
-                
+
+            <h3 id="data">Liturgia diária</h3>
+
+            <p class="assembleia" id="liturgia"></p>
+
+            <p class="assembleia" id="cor"></p>
+
+            <p class="assembleia" id="titulo"></p>
+
+            <p class="rubrica" id="referencia"></p>
+
+            <p class="presidente" id="texto"></p>
+
+
         </nav>
     </main>
+
+        <script>
+        
+        const data = document.getElementById("data");
+        const liturgia = document.getElementById("liturgia");
+        const cor = document.getElementById("cor");
+        const titulo = document.getElementById("titulo");
+        const referencia = document.getElementById("referencia");
+        const texto = document.getElementById("texto");
+
+        /*
+
+        fetch("http://liturgia.up.railway.app/v2/")
+            .then(response => response.json()) 
+            .then(data => {
+                console.log(data);
+
+                cor.innerHTML = data.liturgia;
+                
+            })
+        */
+
+        async function getPosts() {
+
+            const response = await fetch("http://liturgia.up.railway.app/v2/");
+            const postList = await response.json();
+
+            console.log(postList);
+
+            data.innerHTML = postList.data;
+            liturgia.innerHTML = postList.liturgia;
+            cor.innerHTML = postList.cor;
+            titulo.innerHTML = postList.leituras.primeiraLeitura[0].titulo;
+            referencia.innerHTML = postList.leituras.primeiraLeitura[0].referencia;
+            texto.innerHTML = postList.leituras.primeiraLeitura[0].texto;
+            
+        }
+
+        getPosts();
+
+    </script>
 </body>
 
 </html>
