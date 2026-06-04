@@ -38,12 +38,6 @@ header a i{
     padding: 10px;
 }
 
-.main-details .accordion-item h3{
-    width: 100lvh;
-    min-height: max-content;
-    max-width: 400px;
-}
-
 .main-index .menu li{
     display: flex;
     justify-content: center;
