@@ -29,6 +29,7 @@ header a i{
 .main-details{
     margin: 10px 10px;
     border: 1px solid var(--color-border);
+    width: 95%;
     height: 100%;
     display: flex;
     text-align: justify;
